@@ -2,13 +2,30 @@ package com.arnold.weatherapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.arnold.weatherapp.view.adapters.MainDailyListAdapter
+import com.arnold.weatherapp.view.adapters.MainHourlyListAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    main_city_name_tv.text = "Kyiv"
+        initValues()
+
+        main_hourly_list.apply {
+            adapter = MainHourlyListAdapter()
+            layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
+            setHasFixedSize(true)
+        }
+        main_daily_list.adapter = MainDailyListAdapter()
+        main_daily_list.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,
+        false)
+        main_daily_list.setHasFixedSize(true)
+    }
+
+    private fun initValues(){
+        main_city_name_tv.text = "Kyiv"
         main_date_tv.text = "14 february"
         main_weather_condition_icon.setImageResource(R.drawable.ic_sun)
         main_weather_condition_description.text = "Clear sky"

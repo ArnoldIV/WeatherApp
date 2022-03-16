@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1775" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/bg_main_bottom_sheets.xml" value="0.339" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/bg_main_bottom_sheets_swipper.xml" value="0.339" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout-v26/activity_main.xml" value="0.5" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.48922863099374564" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout-v26/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/item_main_daily.xml" value="0.29190751445086704" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/item_main_hourly.xml" value="0.75" />
       </map>
     </option>
   </component>
