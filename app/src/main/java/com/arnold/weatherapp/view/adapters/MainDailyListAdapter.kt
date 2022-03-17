@@ -3,12 +3,13 @@ package com.arnold.weatherapp.view.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
 import com.arnold.weatherapp.R
+import com.arnold.weatherapp.bussiness.model.DailyWeatherModel
+import com.arnold.weatherapp.databinding.ItemMainDailyBinding
 
-class MainDailyListAdapter : RecyclerView.Adapter<MainDailyListAdapter.DailyViewHolder>() {
 
-    inner class DailyViewHolder(view:View) : RecyclerView.ViewHolder(view)
+class MainDailyListAdapter : BaseAdapter<DailyWeatherModel>() {
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DailyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_main_daily,parent,
@@ -16,10 +17,17 @@ class MainDailyListAdapter : RecyclerView.Adapter<MainDailyListAdapter.DailyView
         return DailyViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: DailyViewHolder, position: Int) {
+    inner class DailyViewHolder(view:View) : BaseViewHolder(view) {
+        private val binding = ItemMainDailyBinding.bind(view)
+        override fun bindView(position: Int) {
+            with(binding){
+                itemDailyDateTv.text = "17 saturday"
+                itemDailyWeatherConditionIcon.setImageResource(R.drawable.ic_sun)
+                itemDailyPopTv.text = "80%"
+                itemDailyMaxTempTv.text = "29°"
+                itemDailyMinTempTv.text = "14°"
+            }
+        }
 
     }
-
-    override fun getItemCount() = 8
-
-    }
+}
