@@ -4,11 +4,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.arnold.weatherapp.R
-import com.arnold.weatherapp.bussiness.model.HoulryWeatherModel
+import com.arnold.weatherapp.bussiness.model.HourlyWeatherModel
 import com.arnold.weatherapp.databinding.ItemMainHourlyBinding
 
 
-class MainHourlyListAdapter : BaseAdapter<HoulryWeatherModel>() {
+class MainHourlyListAdapter : BaseAdapter<HourlyWeatherModel>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HourlyViewHolder {

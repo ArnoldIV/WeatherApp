@@ -1,3 +1,4 @@
 package com.arnold.weatherapp.bussiness.model
 
-data class HoulryWeatherModel(val t:String)
+class WeatherData(val q : String) {
+}
