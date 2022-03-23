@@ -20,7 +20,8 @@ class App : Application() {
         val flag = preferences.contains(IS_STARTED_UP)
 
         if (!flag){
-            val editor = preferences.edit().putBoolean(IS_STARTED_UP,true)
+            val editor = preferences.edit()
+            editor.putBoolean(IS_STARTED_UP,true)
             editor.apply()
             val intent = Intent(this,InitialActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK

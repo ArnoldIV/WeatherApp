@@ -7,7 +7,7 @@ import android.os.Looper
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.arnold.weatherapp.bussiness.model.DailyWeatherModel
 import com.arnold.weatherapp.bussiness.model.HourlyWeatherModel
-import com.arnold.weatherapp.bussiness.model.WeatherData
+import com.arnold.weatherapp.bussiness.model.WeatherDataModel
 import com.arnold.weatherapp.presenters.MainPresenter
 import com.arnold.weatherapp.view.MainView
 import com.arnold.weatherapp.view.adapters.MainDailyListAdapter
@@ -80,7 +80,7 @@ class MainActivity : MvpAppCompatActivity(), MainView {
         main_city_name_tv.text = data
     }
 
-    override fun displayCurrentData(data: WeatherData) {
+    override fun displayCurrentData(data: WeatherDataModel) {
         main_city_name_tv.text = "Kyiv"
         main_date_tv.text = "14 february"
         main_weather_condition_icon.setImageResource(R.drawable.ic_sun)
