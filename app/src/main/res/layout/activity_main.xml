@@ -10,6 +10,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/main_menu_btn"
             style="@style/IconButton"
@@ -61,16 +76,16 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.4" />
 
+
         <ImageView
             android:id="@+id/main_weather_image"
             android:layout_width="160dp"
             android:layout_height="200dp"
-            android:layout_marginStart="53dp"
             android:contentDescription="@string/content_description_of_vector_image"
             app:layout_constraintBottom_toTopOf="@id/guideline"
-            app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/main_weather_condition_description"
             tools:src="@mipmap/clear_cloud_xhdpi" />
-
 
         <ImageView
             android:id="@+id/main_weather_condition_icon"
@@ -79,15 +94,15 @@
             android:contentDescription="@string/content_description_of_icon"
             app:layout_constraintBottom_toTopOf="@+id/main_temp"
             app:layout_constraintStart_toStartOf="@+id/main_temp"
-            tools:src="@drawable/ic_sun" />
+            tools:src="@drawable/ic_01d" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/main_weather_condition_description"
             style="@style/MainTextViewStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:layout_marginStart="10dp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/main_weather_condition_icon"
             app:layout_constraintEnd_toStartOf="@+id/main_weather_image"
             app:layout_constraintStart_toEndOf="@+id/main_weather_condition_icon"
@@ -101,13 +116,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="1dp"
-            android:autoSizeMinTextSize="88sp"
-            android:autoSizeTextType="uniform"
             android:includeFontPadding="false"
             android:textSize="98sp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-            app:layout_constraintEnd_toStartOf="@id/main_weather_image"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/main_menu_btn"
             tools:text="25\u00b0" />
 
         <LinearLayout
@@ -143,40 +156,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                style="@style/DividerStyle"
-                android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:orientation="vertical">
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <com.google.android.material.textview.MaterialTextView
-                    style="@style/MainTextViewStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:includeFontPadding="false"
-                    android:text="@string/average"
-                    android:textSize="12sp" />
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/main_temp_av_tv"
-                    style="@style/MainTextViewStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:includeFontPadding="false"
-                    android:textSize="25sp"
-                    tools:text="22\u00b0" />
-
-            </LinearLayout>
 
             <LinearLayout
                 style="@style/DividerStyle"
@@ -339,6 +318,25 @@
             </LinearLayout>
         </LinearLayout>
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="204dp" />
+
+        <TextView
+            android:id="@+id/main_feels_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="feels like"
+            style="@style/MainTextViewStyle"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/main_temp"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -384,12 +382,11 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"/>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/main_daily_list"
+            <FrameLayout
+                android:id="@+id/fragmentContainer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:overScrollMode="never"
-                tools:layout_height="16dp"/>
+                android:layout_height="match_parent">
+            </FrameLayout>
 
 
         </LinearLayout>

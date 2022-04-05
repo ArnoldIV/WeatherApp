@@ -1,11 +1,42 @@
 <resources>
     <string name="app_name">Weather App</string>
-    <string name="content_description_menu">MenuIcon</string>
-    <string name="content_description_settings">SettingsIcon</string>
-    <string name="content_description_of_icon">Set icon of current weather</string>
-    <string name="content_description_of_vector_image">Set vector image of current weather</string>
-
     <string name="min">Min</string>
     <string name="max">Max</string>
     <string name="average">Average</string>
+    <string name="location">Location</string>
+    <string name="temperature">Temperature</string>
+    <string name="wind_speed">Wind speed</string>
+    <string name="pressure">Pressure</string>
+    <string name="wind_speed_mu_ms">%1$s m/s</string>
+    <string name="wind_speed_mu_kmh">%1$s km/h</string>
+    <string name="pressure_mu_hpa">%1$s hPa</string>
+    <string name="pressure_mu_mmHg">%1$s mmHg</string>
+    <string name="m_s">m/s</string>
+    <string name="km_h">km/h</string>
+    <string name="mmhg">mmHg</string>
+    <string name="hpa">hPa</string>
+    <string name="feels_like">Feels like</string>
+    <string name="morn">morn</string>
+    <string name="day">day</string>
+    <string name="eve">eve</string>
+    <string name="night">night</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_dir">Wind direction</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="source_provider">Source provider</string>
+    <string name="provided_by">Provided by</string>
+    <string name="provider_description">All data provided by Open Weather \nMap using One Call API</string>
+
+
+
+    <string name="comma" translatable="false">, %1$s</string>
+    <string name="degree_symbol" translatable="false">%1$s\u00B0</string>
+    <string name="c" translatable="false">\u00B0C</string>
+    <string name="f" translatable="false">\u00B0F</string>
+
+    <string name="content_description_menu" translatable="false">MenuIcon</string>
+    <string name="content_description_settings" translatable="false">SettingsIcon</string>
+    <string name="content_description_of_icon" translatable="false">Set icon of current weather</string>
+    <string name="content_description_of_vector_image" translatable="false">Set vector image of current weather</string>
 </resources>

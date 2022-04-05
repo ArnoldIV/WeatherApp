@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Погода</string>
+    <string name="min">мін</string>
+    <string name="max">макс</string>
+    <string name="average">середня</string>
+    <string name="temperature">Температура</string>
+    <string name="feels_like">Відчувається як</string>
+    <string name="location">Розташування</string>
+    <string name="wind_speed">Швидкість вітру</string>
+    <string name="pressure">Повітряний тиск</string>
+    <string name="wind_speed_mu_ms">%1$s м/с</string>
+    <string name="wind_speed_mu_kmh">%1$s км/г</string>
+    <string name="pressure_mu_hpa">%1$s гПа</string>
+    <string name="pressure_mu_mmHg">%1$s мм.рт.ст</string>
+    <string name="m_s">м/с</string>
+    <string name="km_h">км/г</string>
+    <string name="mmhg">мм.рт.ст</string>
+    <string name="hpa">гПа</string>
+    <string name="provided_by">Забезпечується</string>
+    <string name="provider_description">Усі дані надані Open Weather \nMap за допомогою One Call API</string>
+    <string name="source_provider">Джерело постачальника</string>
+    <string name="morn">Ранок</string>
+    <string name="day">День</string>
+    <string name="eve">Вечір</string>
+    <string name="night">Ніч</string>
+    <string name="humidity" >Вологість</string>
+    <string name="wind_dir">Напрямок вітру</string>
+    <string name="sunrise">Cхід сонця</string>
+    <string name="sunset">Захід сонця</string>
+
+</resources>

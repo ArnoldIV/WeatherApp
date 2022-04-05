@@ -8,7 +8,7 @@ abstract class BaseAdapter<D> : RecyclerView.Adapter<BaseAdapter.BaseViewHolder>
 
     //there will be data that will come from the server
     private val _mData by lazy { mutableListOf<D>() }
-    private val mData : List<D> =  _mData
+    val mData : List<D> =  _mData
 
     override fun onBindViewHolder(
         holder: BaseViewHolder,
@@ -17,7 +17,7 @@ abstract class BaseAdapter<D> : RecyclerView.Adapter<BaseAdapter.BaseViewHolder>
         holder.bindView(position)
     }
 
-    override fun getItemCount() =  10
+    override fun getItemCount() =  _mData.size
 
     fun updateData(data: List<D>){
         if (_mData.isEmpty() && (data.isNotEmpty())){

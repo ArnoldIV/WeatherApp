@@ -2,20 +2,32 @@ package com.arnold.weatherapp
 
 import android.app.Application
 import android.content.Intent
+import androidx.room.Room
+import com.arnold.weatherapp.business.room.OpenWeatherDatabase
+import com.arnold.weatherapp.view.SettingsHolder
 
 const val APP_SETTINGS = "App settings"
 const val IS_STARTED_UP = "Is started up"
 
 class App : Application() {
 
-    //TODO DB
+    object DbSingleton{
+            lateinit var db:OpenWeatherDatabase
+    }
+
 
     override fun onCreate() {
         super.onCreate()
 
-        //init DB
+        //TODO убрать fallbackToDestructiveMigration() к релизу
+       DbSingleton.db = Room.databaseBuilder(this,OpenWeatherDatabase::class.java,"OpenWeatherDB")
+            .fallbackToDestructiveMigration()
+            .build()
+
 
         val preferences = getSharedPreferences(APP_SETTINGS, MODE_PRIVATE)
+
+        SettingsHolder.onCreate(preferences)
 
         val flag = preferences.contains(IS_STARTED_UP)
 

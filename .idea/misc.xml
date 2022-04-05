@@ -6,11 +6,28 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1775" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/bg_main_bottom_sheets.xml" value="0.339" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/bg_main_bottom_sheets_swipper.xml" value="0.339" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout-v26/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/bg_menu_favorites_list.xml" value="0.2455" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/bg_menu_predictions_list.xml" value="0.2455" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/city_item_favorite_selector.xml" value="0.2455" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_01d.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_02d.xml" value="0.1635" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_03d.xml" value="0.1635" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_04d.xml" value="0.1635" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_cloudy.xml" value="0.1635" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_cloudy_clear_at_times.xml" value="0.1635" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_sun.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout-v26/activity_main.xml" value="0.3623789764868603" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_initial.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/item_main_daily.xml" value="0.29190751445086704" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_menu.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_settings.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_daily_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/fragment_day_info.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/item_city_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/item_main_daily.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/item_main_hourly.xml" value="0.75" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/WeatherApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_custom.xml" value="0.1" />
       </map>
     </option>
   </component>

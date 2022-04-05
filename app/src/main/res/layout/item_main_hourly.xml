@@ -41,7 +41,7 @@
                 android:id="@+id/item_main_hourly_temp_icon"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                tools:src="@drawable/ic_sun" />
+                tools:src="@drawable/ic_01d" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/item_main_hourly_pop_tv"

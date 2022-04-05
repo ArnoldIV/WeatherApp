@@ -1,8 +1,8 @@
 package com.arnold.weatherapp.view
 
-import com.arnold.weatherapp.bussiness.model.DailyWeatherModel
-import com.arnold.weatherapp.bussiness.model.HourlyWeatherModel
-import com.arnold.weatherapp.bussiness.model.WeatherDataModel
+import com.arnold.weatherapp.business.model.DailyWeatherModel
+import com.arnold.weatherapp.business.model.HourlyWeatherModel
+import com.arnold.weatherapp.business.model.WeatherDataModel
 import moxy.MvpView
 import moxy.viewstate.strategy.alias.AddToEndSingle
 
